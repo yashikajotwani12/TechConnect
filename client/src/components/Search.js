@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import styled from "styled-components";
 import colors from "../globalStyles/colorStyles";
 import { BsSearch } from "react-icons/bs";
@@ -10,26 +10,36 @@ export const SearchBarContainer = styled.div`
   justify-content: flex-end;
   padding: 5px;
   border-radius: 5px;
+  margin-top: 100px;
 `;
 
 export const InputText = styled.input`
   flex-grow: 1;
-  margin-right: 10px;
+  margin-right: 20px;
   border-radius: 5px;
   border: none;
+  font-size: 1.5rem;
 `;
-export const SerachIcon = styled.div`
+export const SearchIcon = styled.div`
   display: flex;
   align-items: center;
-  margin-right: 10px;
+  margin-right: 20px;
 `;
 const Search = () => {
+  const [searchInput, setSearchInput] = useState("");
+  const handleChange = (valueInput) => {
+    setSearchInput(valueInput);
+  };
   return (
     <SearchBarContainer>
-      <InputText type="text" />
-      <SerachIcon>
+      <InputText
+        type="text"
+        value={searchInput}
+        onChange={(e) => handleChange(e.target.value)}
+      />
+      <SearchIcon>
         <BsSearch color={colors.blackSqueeze} size="32px" />
-      </SerachIcon>
+      </SearchIcon>
     </SearchBarContainer>
   );
 };
