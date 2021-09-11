@@ -8,6 +8,7 @@ const colors = {
   blueHaze: "#c8c3d8",
   bazaar: "#997776",
   edward: "#a6bab2",
+  greendy: "#0AB29C",
 };
 
 export default colors;
