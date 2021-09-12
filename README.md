@@ -84,3 +84,15 @@ $ cd Backend
 ```
 $ nodemon start
 ```
+
+
+
+<div align="center">
+            
+[![Uses Git](https://forthebadge.com/images/badges/uses-git.svg)](https://github.com/yashikajotwani12/TechConnect) [![Uses HTML](https://forthebadge.com/images/badges/uses-html.svg)](https://github.com/yashikajotwani12/TechConnect) [![Uses CSS](https://forthebadge.com/images/badges/uses-css.svg)](https://github.com/yashikajotwani12/TechConnect) 
+[![Built with love](https://forthebadge.com/images/badges/built-by-developers.svg)](https://github.com/yashikajotwani12/TechConnect) 
+
+</div>
+            
+            
+<div align="center"><img width="250px" src="https://github.com/yashikajotwani12/TechConnect/blob/master/client/src/images/logo.png" ></img></div>
