@@ -62,7 +62,7 @@ connecting other people would be so fun if would make it gamified.
 ### Frontend
 - Go to directory
 ```
-$ cd HashHub
+$ cd client
 ```
 - Install Dependencies
 ```
@@ -74,14 +74,10 @@ $ npm run start
 ```
 
 ### Backend
-- Install Submodules
-```
-$ git submodule update --init
-```
 
 - Go the directory
 ```
-$ cd Hashhub_Backend
+$ cd Backend
 ```
 
 - Start server (using nodemon)
