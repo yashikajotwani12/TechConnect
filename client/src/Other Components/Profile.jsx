@@ -16,20 +16,20 @@ function Profile() {
                     <div className="profile-image">
                         <img className="image" src={ user.profileURL===''?"https://dental-smile.net/public/uploads/profile_png_1113533201904221555971977765.png": user.profileURL} />
                         <h2 className="profile-name">{user.name}</h2>
-                        <h4 className="sub-name">Software Engineer</h4>
+                        <h4 className="sub-name">{user.position}</h4>
                         <h3 className="profile-title">Connect with Me</h3>
                         <div className="media-links">
                             <div className="media-link">
                                 <img className="icon-link" src="https://cdn.icon-icons.com/icons2/2428/PNG/512/linkedin_black_logo_icon_147114.png" />
-                                <a href="#">wwoingoitnovintoin.on.rogn.rgi</a>
+                                <a href="#">{user.Socials[1]}</a>
                             </div>
                             <div className="media-link">
                                 <img className="icon-link" src="https://cdn-icons-png.flaticon.com/512/25/25231.png" />
-                                <a href="#">wwoingoitnovintoin.on.rogn.rgi</a>
+                                <a href="#">{user.Socials[0]}</a>
                             </div>
                             <div className="media-link">
                                 <img className="icon-link" src="https://cdn-icons-png.flaticon.com/512/20/20673.png" />
-                                <a href="#">wwoingoitnovintoin.on.rogn.rgi</a>
+                                <a href="#">{user.Socials[3]}</a>
                             </div>
                         </div>
                     </div>

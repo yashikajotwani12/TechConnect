@@ -13,6 +13,7 @@ function Navbar() {
         localStorage.setItem('user', null);
         localStorage.setItem('userexist', false);
         await setuserId(null);
+        
     }
     return (
         <div className="mainNavbar">
