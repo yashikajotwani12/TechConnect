@@ -1,0 +1,49 @@
+/* -------Left side of profile page------- */
+
+.left_dashboard {
+    width: 20%;
+    height: 100vh;
+    background-color: #0AB29C;
+    padding: 25px;
+}
+.image{
+    width: 75%;
+    box-shadow: 2px 2px 12px 10px rgba(88, 88, 88, 0.2);
+    border-radius: 100%;
+}
+.profile-name{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.sub-name{
+    text-align: center;
+    color: #585858;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-top: -18px;
+    margin-bottom: 10px;
+}
+.profile-title{
+    color: #085B50;
+    text-shadow: 2px 2px 5px rgba(88, 88, 88, 0.1);
+    margin-top: 50px;
+}
+.profile-paragraph{
+    color: #085B50;
+    margin-bottom: 50px;
+    
+}
+
+.media-links{
+    padding: 20px;
+    align-items: center;
+}
+.icon-link{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+/* -------Right side of profile page------- */
