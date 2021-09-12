@@ -1,0 +1,105 @@
+/* -------Left side of profile page------- */
+
+.left_dashboard {
+    width: 20%;
+    height: 100vh;
+    background-color: #0AB29C;
+    padding: 25px;
+    float: left;
+}
+.image{
+    width: 75%;
+    box-shadow: 2px 2px 12px 10px rgba(88, 88, 88, 0.2);
+    border-radius: 100%;
+}
+.profile-name{
+    text-align: center;
+    color: #fff;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+.sub-name{
+    text-align: center;
+    color: #585858;
+    font-size: 0.9em;
+    font-weight: 500;
+    margin-top: -18px;
+    margin-bottom: 10px;
+}
+.profile-title{
+    color: #085B50;
+    text-shadow: 2px 2px 5px rgba(88, 88, 88, 0.1);
+    margin-top: 20px;
+}
+.profile-paragraph{
+    color: #085B50;
+    margin-bottom: 20px;
+    
+}
+
+.media-links{
+    padding: 20px;
+    align-items: center;
+}
+.icon-link{
+    width: 30px;
+    margin-right: 10px;
+}
+
+
+/* -------Right side of profile page------- */
+.right_dashboard{
+    width: 73%;
+    float: right;
+}
+.info{
+    width: 60%;
+    float: left;
+}
+.profile-container{
+    background-color: #fff;
+    padding: 10px 30px;
+    border-radius: 5px;
+    margin: 50px 20px;
+}
+
+.tag{
+    width: 23%;
+    float: right;
+    padding: 20px;
+    margin: 50px ;
+}
+.tag-head{
+    padding: 0;
+    margin: 10px;
+
+}
+.tag-title{
+    border-radius: 20px;
+    padding: 10px;
+    border: 2px solid black;
+    display: inline-block;
+    margin: 5px;
+}
+
+.buttons{
+    display: inline-block;
+    margin: 10px;
+}
+button{
+    border-radius: 20px;
+    padding: 10px 20px;
+    border: none;
+    box-shadow: 2px 2px 5px 1px rgba(88,88,88, 0.1);
+    text-transform: uppercase;
+}
+.save-button{
+    background-color: #0AB29C;
+    color: #fff;
+    font-weight: bold;
+}
+.cancel-button{
+    color: #000;
+    
+
+}
