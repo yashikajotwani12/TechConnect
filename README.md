@@ -1,3 +1,25 @@
+<h1 align="center">
+            🖥️ Hash/Hub 🖥️
+</h1>
+
+<div align="center">
+
+![Badge](https://img.shields.io/badge/Tech_Stack-MERN-yellow) ![Badge](https://img.shields.io/badge/Version-1.2-green) ![Badge](https://img.shields.io/badge/License-Apache_2.0-blue) ![Badge](https://img.shields.io/badge/Type-OpenSource-orange) ![Badge](https://img.shields.io/badge/For-Students-red) 
+
+</div>
+
+<br />
+
+## Tech Stack : <img src="https://img.shields.io/badge/html5%20-%23E34F26.svg?&style=for-the-badge&logo=html5&logoColor=white"/> <img src="https://img.shields.io/badge/css3%20-%231572B6.svg?&style=for-the-badge&logo=css3&logoColor=white"/> <img src="https://img.shields.io/badge/react%20-%2314354C.svg?&style=for-the-badge&logo=react&logoColor=white"/> <img src="https://img.shields.io/badge/express%20-%23E34F26.svg?&style=for-the-badge&logo=express&logoColor=white"/> <img src="https://img.shields.io/badge/mongo%20-%231572B6.svg?&style=for-the-badge&logo=mongodb&logoColor=green"/> <img src="https://img.shields.io/badge/nodejs%20-%2314354C.svg?&style=for-the-badge&logo=nodejs&logoColor=white"/> <img src="https://img.shields.io/badge/markdown-%23000000.svg?&style=for-the-badge&logo=markdown&logoColor=white"/> <img src="https://img.shields.io/badge/github%20-%23121011.svg?&style=for-the-badge&logo=github&logoColor=white"/> <img src="https://img.shields.io/badge/git%20-%23121011.svg?&style=for-the-badge&logo=git&logoColor=green"/> 
+
+- **Frontend:** React
+- **Backend:** Nodejs, express, MongoDB
+- **Version Control:** Git and GitHub
+- **Hosting:** gh-pages(frontend), heroku(backend)
+- **Code Editor and tools**: VS Code
+
+
+
 ## Inspiration
 *Less Social Interactions
 During this pandemic situation, many people found not interacting with people around.
