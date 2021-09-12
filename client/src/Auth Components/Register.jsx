@@ -43,8 +43,8 @@ function Register() {
                     <div className="left">
                         <h3 className="heading">TechConnect</h3>
                         <img src={login} alt="" style={{width: '25rem'}} />
-                        <p className="para">Make your algorithm, website or any flowchart, save it in a project and download!</p><br />
-                        <p className="para">As Simple as that!</p><br />
+                        {/* <p className="para">Make your algorithm, website or any flowchart, save it in a project and download!</p><br /> */}
+                        {/* <p className="para">Connect with peers!</p><br /> */}
                     </div>
                     <div className="right">
                         <h3>Welcome</h3>
