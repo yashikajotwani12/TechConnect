@@ -5,7 +5,8 @@ import Card from "./Card";
 import { mockData } from "../mockData.js";
 import ReactPaginate from "react-paginate";
 import "../App.css";
-
+import Navbar from "../Other Components/Navbar.jsx";
+import axios from "axios"
 export const HomePageContainner = styled.div`
   display: flex;
   flex-direction: column;
@@ -36,7 +37,7 @@ const Home = () => {
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState(0);
   const [tag, setTag] = useState("");
-
+  const [usersrender , setusersrender] = useState([]);
   const handlePageClick = (e) => {
     const selectedPage = e.selected;
     setOffset(selectedPage + 1);
@@ -50,15 +51,25 @@ const Home = () => {
   useEffect(() => {
     getData();
   }, [offset]);
-  return (
+  const getUser = async (req,res)=>{
+    const output = await axios.get("http://localhost:5000/all_profiles")
+    console.log(output.data.user);
+    setusersrender(output.data.user);
+  }
+  useEffect(()=>{
+    getUser();
+  },[])
+  return (<>
+    <Navbar />
     <HomePageContainner>
+
       <Search setTag={setTag} />
       <div style={{ paddingTop: "50px" }}>
         Tags: {tag && <TagContainer>{tag}</TagContainer>}
       </div>
       <CardsContainer>
-        {dataArr.map((data) => (
-          <Card key={data.id} data={data} />
+        {usersrender.map((data) => (
+          <Card data={data} />
         ))}
       </CardsContainer>
       <ReactPaginate
@@ -75,6 +86,7 @@ const Home = () => {
         activeClassName={"active"}
       />
     </HomePageContainner>
+  </>
   );
 };
 

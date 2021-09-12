@@ -1,8 +1,9 @@
-import React from "react";
+import React,{useContext, useState} from "react";
 import styled from "styled-components";
 import { SiFacebook, SiGithub, SiLinkedin, SiInstagram } from "react-icons/si";
 import colors from "../globalStyles/colorStyles";
-
+import { useHistory } from "react-router";
+import { UserContext } from "../App";
 export const CardContainer = styled.div`
   width: 25%;
   background-color: #ffffff;
@@ -47,36 +48,42 @@ export const TagContainer = styled.div`
   margin-right: 5px;
   color: #858383;
 `;
+
 const Card = ({ data }) => {
+  console.log(data.Socials[0])
+  const history = useHistory();
+  const {visituser,setvisituser} = useContext(UserContext)
+  const visit = async()=>{
+    await setvisituser(data);
+    localStorage.setItem('visituser', data);
+    history.push('/visit_user')
+  }
   return (
     <CardContainer>
       <ProfileAndInfoContainer>
         <div style={{ width: "100px", height: "100px" }}>
-          <ProfileImg src={data.profileImg} />
+          <ProfileImg src={data.profileURL} />
         </div>
         <div>
           <h3 style={{ color: "#0AB29C" }}>
-            {data.firstName} {data.lastName}
+            {data.name}
           </h3>
           {data.tags.map((tag) => (
             <TagContainer>{tag}</TagContainer>
           ))}
           <SocialMediaText>Social Medias: </SocialMediaText>
           <SocialMediasContainer>
-            <SiFacebook color={colors.ming} style={{ marginRight: "5px" }} />
-            <SiGithub color={colors.ming} style={{ marginRight: "5px" }} />
-            <SiLinkedin color={colors.ming} style={{ marginRight: "5px" }} />
-            <SiInstagram color={colors.ming} style={{ marginRight: "5px" }} />
+          <a src={data.Socials[0]}><SiGithub color={colors.ming} style={{ marginRight: "5px" }} /></a>
+            <SiFacebook color={colors.ming} style={{ marginRight: "5px" }} > <a src={data.Socials[2]} ></a> </SiFacebook>
+            <SiLinkedin color={colors.ming} style={{ marginRight: "5px" }} ><a src={data.Socials[1]} ></a></SiLinkedin>
+            <SiInstagram color={colors.ming} style={{ marginRight: "5px" }} ><a src={data.Socials[3]} ></a></SiInstagram>
           </SocialMediasContainer>
         </div>
       </ProfileAndInfoContainer>
       <LinksContainer>
-        <p style={{ color: "#858383" }}>{data.text}</p>
-        <p>Links: </p>
-        {data.links.map((link) => (
-          <p>{link}</p>
-        ))}
+        <p style={{ color: "black" }}>{data.description}</p>
       </LinksContainer>
+      <button className="save-button" onClick={visit}>Visit</button>
     </CardContainer>
   );
 };
