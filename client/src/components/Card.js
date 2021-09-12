@@ -55,7 +55,7 @@ const Card = ({ data }) => {
   const {visituser,setvisituser} = useContext(UserContext)
   const visit = async()=>{
     await setvisituser(data);
-    localStorage.setItem('visituser', data);
+    localStorage.setItem('visituser', JSON.stringify(data));
     history.push('/visit_user')
   }
   return (

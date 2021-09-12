@@ -28,7 +28,7 @@ function App() {
     else setuserexist(false);
   }, [localStorage.getItem('userexist')])
   useEffect(()=>{
-    setvisituser(localStorage.getItem('visituser'));
+    setvisituser(JSON.parse(localStorage.getItem('visituser')));
   },[localStorage.getItem('visituser')])
   return (
     <div className="App">
@@ -57,7 +57,8 @@ function App() {
               <Route exact path='/edit_profile' component={Login} />
               <Route exact path='/Home' component={Login} />
               <Route exact path='/user_profile' component={Login} />
-              <Route exact path='/user_profile/:id' component={Login} />
+              <Route exact path='/visit_user' component={Login} />
+
             </UserContext.Provider>
           </Switch>
         </Router>

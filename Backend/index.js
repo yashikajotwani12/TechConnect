@@ -22,6 +22,7 @@ app.use(require('./routings/auth'))
 app.get('/',(req,res)=>{
     res.send("backend")
 })
-app.listen(5000,()=>{
+
+app.listen(5000 || process.env.PORT ,()=>{
     console.log('Listing to Port')
 })
