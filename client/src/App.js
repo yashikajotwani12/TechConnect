@@ -1,16 +1,14 @@
-import logo from './logo.svg';
-import Profile from '../src/page/profile'
-import './App.css';
+import "./App.css";
+import Home from "./components/Home";
+import Profile from "./components/profile";
 
 function App() {
   return (
-    <Profile />
+    <div className="App">
+      <Home />
+      <Profile />
+    </div>
   );
 }
 
 export default App;
-
-
-
-
-
