@@ -1,0 +1,52 @@
+.mainNavbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 2rem;
+    background: #161b22;
+    z-index: 32;
+    display: flex;
+    padding: 10px 20px;
+    font-size: 14px;
+    line-height: 1.5;
+    color: white;
+    align-items: center;
+    box-shadow: 0 0 5px 3px rgb(0 0 0 / 50%);
+}
+.mainNavbar .left img{
+    width: 2rem;
+}
+.mainNavbar .left {
+    display: flex;
+    align-items: center;
+}
+.mainNavbar .left h2{
+    font-weight: 500;
+    margin-left: 1rem;
+    color: white;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.mainNavbar .right{
+    display: flex;
+    align-items: center;
+}
+.mainNavbar .right h3{
+    font-weight: 300;
+    margin-left: 1rem;
+    color: white;
+    font-size: 1rem;
+}
+.Bprimary{
+    margin-left: 1rem;
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+    transition: 0.3s ;
+    font-size: 11px;
+}
+.Bprimary:hover{
+    background: white;
+    color: black;
+}

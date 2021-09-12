@@ -1,0 +1,53 @@
+.edit-profile{
+    position: relative;
+    left: 25%;
+}
+.edit-profile .input-field-edit{
+    margin-bottom: 1rem;
+}
+.edit-profile .input-field-edit h2{
+    font-size: 1rem;
+    font-weight: 500;
+    color: #397584;
+    margin-bottom: 10px;
+}
+.edit-profile .input-field-edit input , .edit-profile .input-field-edit textarea{
+    padding: 5px 12px;
+    width: 50%;
+    font-size: 14px;
+    line-height: 20px;
+    color: black;
+    vertical-align: middle;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #397584;
+    border-radius: 6px;
+    outline: none;
+    padding: 5px 12px;
+    font-size: 14px;
+    line-height: 20px;
+    color: var(--color-text-primary);
+    vertical-align: middle;
+    background-color: white;
+    background-repeat: no-repeat;
+    background-position: right 8px center;
+    border: 1px solid #397584;
+    border-radius: 6px;
+    outline: none;
+    box-shadow: #397584;
+    color: #397585;
+    box-shadow: black;
+    font-family: inherit;
+}
+.edit-profile .input-field-edit textarea{
+    height: 4rem;
+}
+.top-heading-edit{
+    text-align: center;
+    padding: 1rem;
+    font-size: 2rem;
+    font-weight: 400;
+    color: #161b22;
+    text-decoration: underline;
+}
