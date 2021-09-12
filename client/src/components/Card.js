@@ -25,7 +25,7 @@ export const ProfileAndInfoContainer = styled.div`
 export const SocialMediasContainer = styled.div`
   width: 100%;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-start;
 `;
 
 export const LinksContainer = styled.div`
@@ -42,7 +42,7 @@ const Card = ({ data }) => {
   return (
     <CardContainer>
       <ProfileAndInfoContainer>
-        <div style={{ width: "80px", height: "80px" }}>
+        <div style={{ width: "100px", height: "100px" }}>
           <ProfileImg src={data.profileImg} />
         </div>
         <div>
@@ -52,10 +52,10 @@ const Card = ({ data }) => {
           <p style={{ color: "#858383" }}>{data.text}</p>
           <SocialMediaText>Social Medias: </SocialMediaText>
           <SocialMediasContainer>
-            <SiFacebook color={colors.ming} />
-            <SiGithub color={colors.ming} />
-            <SiLinkedin color={colors.ming} />
-            <SiInstagram color={colors.ming} />
+            <SiFacebook color={colors.ming} style={{ marginRight: "5px" }} />
+            <SiGithub color={colors.ming} style={{ marginRight: "5px" }} />
+            <SiLinkedin color={colors.ming} style={{ marginRight: "5px" }} />
+            <SiInstagram color={colors.ming} style={{ marginRight: "5px" }} />
           </SocialMediasContainer>
         </div>
       </ProfileAndInfoContainer>
