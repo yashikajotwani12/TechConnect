@@ -18,10 +18,6 @@
 - **Frontend:** React
 - **Backend:** Nodejs, express, MongoDB
 - **Version Control:** Git and GitHub
-- **Hosting:** gh-pages(frontend), heroku(backend)
-- **Code Editor and tools**: VS Code
-
-
 
 ## Inspiration
 *Less Social Interactions
