@@ -38,6 +38,15 @@ export const SocialMediaText = styled.p`
   color: ${colors.ming};
   font-weight: 600;
 `;
+
+export const TagContainer = styled.div`
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: solid 1px #858383;
+  display: inline-block;
+  margin-right: 5px;
+  color: #858383;
+`;
 const Card = ({ data }) => {
   return (
     <CardContainer>
@@ -49,7 +58,9 @@ const Card = ({ data }) => {
           <h3 style={{ color: "#0AB29C" }}>
             {data.firstName} {data.lastName}
           </h3>
-          <p style={{ color: "#858383" }}>{data.text}</p>
+          {data.tags.map((tag) => (
+            <TagContainer>{tag}</TagContainer>
+          ))}
           <SocialMediaText>Social Medias: </SocialMediaText>
           <SocialMediasContainer>
             <SiFacebook color={colors.ming} style={{ marginRight: "5px" }} />
@@ -60,6 +71,7 @@ const Card = ({ data }) => {
         </div>
       </ProfileAndInfoContainer>
       <LinksContainer>
+        <p style={{ color: "#858383" }}>{data.text}</p>
         <p>Links: </p>
         {data.links.map((link) => (
           <p>{link}</p>

@@ -21,12 +21,21 @@ export const CardsContainer = styled.div`
   justify-content: center;
   margin-top: 100px;
 `;
+export const TagContainer = styled.div`
+  border-radius: 20px;
+  padding: 5px 10px;
+  border: solid 1px #858383;
+  display: inline-block;
+  margin-right: 5px;
+  color: #858383;
+`;
 const Home = () => {
   const [perPage] = useState(6);
   const [pageCount, setPageCount] = useState(0);
-  const [data, setData] = useState([]);
+  const [dataArr, setDataArr] = useState([]);
   const [offset, setOffset] = useState(0);
   const [page, setPage] = useState(0);
+  const [tag, setTag] = useState("");
 
   const handlePageClick = (e) => {
     const selectedPage = e.selected;
@@ -34,9 +43,8 @@ const Home = () => {
   };
   const getData = () => {
     const slice = mockData.slice(page, page + perPage);
-    console.log(slice);
     setPage(page + perPage);
-    setData(slice);
+    setDataArr(slice);
     setPageCount(Math.ceil(mockData.length / perPage));
   };
   useEffect(() => {
@@ -44,9 +52,12 @@ const Home = () => {
   }, [offset]);
   return (
     <HomePageContainner>
-      <Search />
+      <Search setTag={setTag} />
+      <div style={{ paddingTop: "50px" }}>
+        Tags: {tag && <TagContainer>{tag}</TagContainer>}
+      </div>
       <CardsContainer>
-        {data.map((data) => (
+        {dataArr.map((data) => (
           <Card key={data.id} data={data} />
         ))}
       </CardsContainer>

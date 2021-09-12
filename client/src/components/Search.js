@@ -25,7 +25,7 @@ export const SearchIcon = styled.div`
   align-items: center;
   margin-right: 20px;
 `;
-const Search = () => {
+const Search = ({ setTag }) => {
   const [searchInput, setSearchInput] = useState("");
   const handleChange = (valueInput) => {
     setSearchInput(valueInput);
@@ -38,7 +38,14 @@ const Search = () => {
         onChange={(e) => handleChange(e.target.value)}
       />
       <SearchIcon>
-        <BsSearch color={colors.blackSqueeze} size="32px" />
+        <BsSearch
+          color={colors.blackSqueeze}
+          size="32px"
+          onClick={() => {
+            setSearchInput("");
+            setTag(searchInput);
+          }}
+        />
       </SearchIcon>
     </SearchBarContainer>
   );
