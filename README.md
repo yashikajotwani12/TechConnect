@@ -1,5 +1,8 @@
+<div align="center"><img width="200px" src="https://github.com/yashikajotwani12/TechConnect/blob/master/client/src/images/logo.png" ></img></div>
+
+
 <h1 align="center">
-            🖥️ Hash/Hub 🖥️
+            🖥️ TechConnect 🖥️
 </h1>
 
 <div align="center">
