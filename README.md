@@ -56,3 +56,35 @@ Chatting and Video Calling--
 We would integrate chatting and video apps into our web platform. 
 Gamified Platform--
 connecting other people would be so fun if would make it gamified.
+
+## Setup Steps
+  
+### Frontend
+- Go to directory
+```
+$ cd HashHub
+```
+- Install Dependencies
+```
+$ npm install
+```
+- Start LocalHost Server
+```
+$ npm run start
+```
+
+### Backend
+- Install Submodules
+```
+$ git submodule update --init
+```
+
+- Go the directory
+```
+$ cd Hashhub_Backend
+```
+
+- Start server (using nodemon)
+```
+$ nodemon start
+```
